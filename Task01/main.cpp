@@ -3,6 +3,7 @@
 int main() {
 	int matrix[SIZE][SIZE];
 	int size;
+
 	cout << "Input size of square matrix: ";
 	cin >> size;
 
@@ -11,6 +12,9 @@ int main() {
 
 	cout << "Sum matrix elements up main diagonal: "
 		<< sum_elements_up_main_diagonale(matrix, size) << endl;
+
+	cout << "Sum matrix elements down main diagonal: "
+		<< sum_elements_down_main_diagonale(matrix, size) << endl;
 	system("pause");
 
 	return 0;
